@@ -1,0 +1,22 @@
+# Environment
+.claude/
+__pycache__/
+*.pyc
+.env
+
+# Word documents
+*.docx
+~$*
+
+# Dataset (too large for GitHub — see README for download link)
+extracted_dataset/
+
+# Model artifacts (generated locally after training)
+*.joblib
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
