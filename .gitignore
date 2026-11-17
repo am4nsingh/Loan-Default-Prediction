@@ -3,16 +3,32 @@
 __pycache__/
 *.pyc
 .env
+# local virtualenv
+lendingclub/
+venv/
+.venv/
 
-# Word documents
+# Personal documents / reports
 *.docx
+*.pdf
+unpacked_report/
 ~$*
+.~lock*
 
 # Dataset (too large for GitHub — see README for download link)
+dataset/
 extracted_dataset/
+*.zip
+*.csv
+*.csv.gz
 
-# Model artifacts (generated locally after training)
+# Model artifacts — only the bundled file used by app.py is tracked
 *.joblib
+!model_artifacts.joblib
+
+# Training logs / temp files
+catboost_info/
+*.tmp
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
